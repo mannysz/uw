@@ -9,7 +9,13 @@ tool was created with less than `fifty` lines of shellscript.
 NOTE: This tool is not a drop-in replacement for virtualenvwrapper. Instead, it provides a minimalist way
 of managing python virtual environments effectively with zero calories included :)
 
-## Installing
+## Quick Install
+
+```sh
+zsh <(curl -s https://raw.githubusercontent.com/mannysz/uw/main/install.sh)
+```
+
+## Installing from this repository
 
 - Clone this repository to your preferred folder
 - At your `.bashrc`, `.bashprofile`, or `.zshrc` file, add the following lines:
@@ -24,8 +30,12 @@ To add bashcompletion support to autocomplete virtual environment names, add the
 source [PATH_TO_UWRAPPER_REPO]/bashcompletion.sh
 ```
 
+## Removing the tool
+
+Delete the `.uw` directory created in your home folder and remove the two source lines added in your shell profile file.
+
 ## Contributions
 
-I am lazy and did not create any sort of automatic installation procedure using `curl` or `wget` although that
-would be the ideal way of installing this tool. Any sort of contribution will be reviewed and accepted as long
+~~I am lazy and did not create any sort of automatic installation procedure using `curl` or `wget` although that
+would be the ideal way of installing this tool~~. Any sort of contribution will be reviewed and accepted as long
 as the main `uwrapper.sh` file is kept under fifty lines of code and the contribution is meaningful.
