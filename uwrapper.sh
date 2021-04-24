@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 UWBASEDIR=$(cd `dirname $0` && pwd)
-echo $UWBASEDIR
 
 if [ "$UWPREFIX" = "" ]; then
     export UWPREFIX=$HOME/.virtualenvs
