@@ -3,7 +3,7 @@ UWFILES="uwrapper.sh bashcompletion.sh uwhelp.txt"
 
 # Defining default install prefix if not set
 if [ "$UWDST" = "" ]; then
-    UWDST=$HOME/.uw/
+    UWDST=$HOME/.uw
 fi
 
 # Creating the uwrapper destination folder and downloading it
@@ -14,9 +14,10 @@ done
 
 # Install function
 __uw_install() {
+    echo "" >> $HOME/$1
     echo ". $UWDST/uwrapper.sh" >> $HOME/$1
     echo ". $UWDST/bashcompletion.sh" >> $HOME/$1
-    . $HOME/$1
+    source $HOME/$1
 }
 
 # Installing functions in the target shell system
