@@ -17,19 +17,23 @@ __uw_install() {
     echo "" >> $HOME/$1
     echo ". $UWDST/uwrapper.sh" >> $HOME/$1
     echo ". $UWDST/bashcompletion.sh" >> $HOME/$1
-    source $HOME/$1
 }
 
 # Installing functions in the target shell system
+UWSHELL_FILE=.profile
+
 if [[ "$SHELL" =~ "zsh$" ]]; then
-    __uw_install .zshrc
+    UWSHELL_FILE=.zshrc
 elif [[ "$SHELL" =~ "bash$" ]]; then
-    __uw_install .bashrc
+    UWSHELL_FILE=.bashrc
 else
-    __uw_install .profile
+    UWSHELL_FILE=.profile
 fi
 
-echo "Installation complete!"
-echo
+__uw_install $UWSHELL_FILE
 
-uw -h
+echo "Installation complete!"
+echo "Copy and paste the command bellow or reopen your terminal"
+echo
+echo "\tsource $HOME/$UWSHELL_FILE"
+echo
