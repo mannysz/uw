@@ -1,0 +1,25 @@
+uw -- A minimalist virtualenv manager.
+
+Options:
+
+    -h      Shows usage help and options.
+    -l      Lists all virtualenvs in the prefixed or default path
+    -m      Creates a new virtualenv
+
+Usage:
+
+    uw [-mlh] [env name]
+
+Examples:
+
+    # Creating a virtualenv called "myenv"
+    uw -m myenv
+
+    # Loading the previously created virtualenv
+    uw venv
+
+    # Listing all virtualenvs
+    uw -l
+
+
+
