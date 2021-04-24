@@ -4,4 +4,7 @@ _uw() {
     COMPREPLY=( $(compgen -W "$arg_list" -- $cur) )
 }
 
-complete -F _uw uw
+if command -v complete > /dev/null
+then
+    complete -F _uw uw
+fi
