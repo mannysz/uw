@@ -37,5 +37,5 @@ Delete the `.uw` directory created in your home folder and remove the two source
 ## Contributions
 
 ~~I am lazy and did not create any sort of automatic installation procedure using `curl` or `wget` although that
-would be the ideal way of installing this tool~~. Any sort of contribution will be reviewed and accepted as long
-as the main `uwrapper.sh` file is kept under fifty lines of code and the contribution is meaningful.
+would be the ideal way of installing this tool~~. Any sort of contribution is very welcome as long
+as the main `uwrapper.sh` file is kept simple, well documented, small, and the contribution is meaningful.
