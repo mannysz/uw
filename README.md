@@ -18,7 +18,7 @@ zsh <(curl -s https://raw.githubusercontent.com/mannysz/uw/main/install.sh)
 ## Installing from this repository
 
 - Clone this repository to your preferred folder
-- At your `.bashrc`, `.bashprofile`, or `.zshrc` file, add the following lines:
+- In your `.bashrc`, `.bashprofile`, or `.zshrc` file, add the following lines:
 
 ```sh
 source [PATH_TO_UWRAPPER_REPO]/uwrapper.sh
